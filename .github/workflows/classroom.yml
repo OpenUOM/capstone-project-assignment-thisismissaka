@@ -17,7 +17,7 @@ jobs:
       id: backend-list-teachers
       uses: classroom-resources/autograding-command-grader@v1
       with:
-        node-version: 20.12.1
+        node-version: 16
         test-name: Backend List Teachers
         setup-command: npm install
         command: npm test -- -t "GET /listTeachers should show all teachers"
